@@ -13,14 +13,26 @@ if (!localStorage.getItem("mo3bassia-theme")) {
   }
 }
 
-themeSwitch.addEventListener("click", function () {
-  console.log("HEllo");
+function toggleFunc() {
   document.documentElement.classList.toggle("dark");
   if (document.documentElement.classList.contains("dark")) {
     localStorage.setItem("mo3bassia-theme", "dark");
   } else {
     localStorage.setItem("mo3bassia-theme", "light");
   }
+}
+
+document
+  .querySelector(".toggle")
+  .querySelectorAll("svg")
+  .forEach((svg) => {
+    svg.addEventListener("click", function () {
+      toggleFunc();
+    });
+  });
+
+themeSwitch.addEventListener("click", function () {
+  toggleFunc();
 });
 
 [
