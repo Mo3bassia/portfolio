@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @layer base {
   h1 {
     @apply text-4xl font-bold my-4; /* حجم كبير ووزن ثقيل */
@@ -9,6 +15,10 @@
 
   h2 {
     @apply text-3xl font-semibold my-3; /* حجم متوسط ووزن متوسط */
+  }
+
+  .title {
+    @apply text-4xl font-bold my-4;
   }
 
   h3 {

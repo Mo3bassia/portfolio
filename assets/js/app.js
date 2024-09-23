@@ -63,7 +63,7 @@ const observer = new IntersectionObserver((entries) => {
       );
       currentEl.classList.remove("before:bottom-0");
       currentEl.classList.add("before:opacity-100", "before:-bottom-1.5");
-      currentEl.classList.add("dark:text-primaryColor");
+      currentEl.classList.add("text-primaryColor");
       currentEl.classList.remove("dark:text-slate-200");
     }
   });
