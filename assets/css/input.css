@@ -16,7 +16,7 @@
   }
 
   h4 {
-    @apply text-xl font-medium my-2;
+    @apply font-medium my-2;
   }
 
   h5 {

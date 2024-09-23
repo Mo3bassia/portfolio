@@ -15,14 +15,21 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <script src="assets/js/all.min.js"></script>
   </head>
-  <body class="font-poppins">
-    <div class="home h-screen" id="home">
-      <nav class="py-4">
+  <body
+    class="font-poppins dark:bg-slate-800 transition-colors-and-bg duration-300"
+  >
+    <div
+      class="home h-screen flex flex-col dark:text-slate-100 transition-colors-and-bg duration-300"
+      id="home"
+    >
+      <nav
+        class="py-4 dark:bg-slate-900 transition-colors-and-bg duration-300 shadow-md"
+      >
         <div class="container mx-auto px-2 flex items-center justify-between">
           <a class="text-primaryColor" href="#">
-            <h3>Mohamed Abassia</h3>
+            <h3 class="m-0">Mohamed Abassia</h3>
           </a>
-          <ul class="flex items-center space-x-3">
+          <ul class="flex items-center space-x-5">
             <li class="py-2">
               <a
                 href="#"
@@ -33,28 +40,28 @@
             <li class="py-2">
               <a
                 href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5"
+                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
                 >about</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5"
+                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
                 >education</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5"
+                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
                 >projects</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5"
+                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
                 >contact</a
               >
             </li>
@@ -92,7 +99,38 @@
           </ul>
         </div>
       </nav>
+      <div class="flex-1 md:flex mt-10">
+        <div
+          class="container mx-auto px-2 flex justify-between items-center md:gap-5 lg:gap-10 flex-col text-center md:flex-row md:text-start"
+        >
+          <div class="lg:flex-1">
+            <h3>Hello, I'm</h3>
+            <h1 class="text-4xl md:text-6xl leading-normal">
+              Mohamed <span class="text-primaryColor">Abassia</span>
+            </h1>
+            <h4 class="md:text-md lg:text-xl">
+              And I'm
+              <span
+                class="text-primaryColor auto-writer relative after:content-[''] after:absolute after:right-[-10px] after:h-[110%] after:w-[3px] after:bg-primaryColor after:top-1/2 after:transform after:-translate-y-1/2 block w-fit mx-auto md:inline"
+              ></span>
+            </h4>
+            <p
+              class="leading-loose dark:text-slate-200 transition-colors-and-bg duration-300 max-w-lg mt-4"
+            >
+              I am a dedicated web developer passionate about crafting visually
+              stunning and highly functional websites. My expertise lies in
+              creating impactful online platforms for individuals and
+              organizations committed to making a positive difference in the
+              world.
+            </p>
+          </div>
+          <div class="lg:flex-1">
+            <img src="assets/images/undraw_website_5bo8.svg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+    <script src="assets/js/type-writer.js" type="module"></script>
   </body>
 </html>

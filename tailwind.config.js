@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         primaryColor: "#3E63F9",
+        dark: "#0b061f",
       },
       transitionProperty: {
         "colors-and-bg": "color, background-color",
