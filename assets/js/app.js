@@ -27,3 +27,35 @@ themeSwitch.addEventListener("click", function () {
   "an Electrical Engineering student",
   "a Self Learner",
 ].typeWriter(document.querySelector(".auto-writer"));
+
+const sections = document.querySelectorAll("section");
+
+const options = {
+  root: null, // viewport
+  rootMargin: "0px",
+  threshold: 0.5,
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      let allLinks = document.querySelectorAll("ul li > a");
+      allLinks.forEach((link) => {
+        link.classList.remove("dark:text-primaryColor");
+        link.classList.add("dark:text-slate-200");
+        link.classList.remove("before:opacity-100", "before:-bottom-1.5");
+      });
+      let currentEl = document.querySelector(
+        `[data-target='${entry.target.id}']`
+      );
+      currentEl.classList.remove("before:bottom-0");
+      currentEl.classList.add("before:opacity-100", "before:-bottom-1.5");
+      currentEl.classList.add("dark:text-primaryColor");
+      currentEl.classList.remove("dark:text-slate-200");
+    }
+  });
+}, options);
+
+sections.forEach((section) => {
+  observer.observe(section);
+});

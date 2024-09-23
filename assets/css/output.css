@@ -663,6 +663,14 @@ p {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -670,11 +678,6 @@ p {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mt-10 {
@@ -860,6 +863,26 @@ p {
   bottom: 0px;
 }
 
+.before\:bottom-1\.5::before {
+  content: var(--tw-content);
+  bottom: 0.375rem;
+}
+
+.before\:-bottom-0::before {
+  content: var(--tw-content);
+  bottom: -0px;
+}
+
+.before\:bottom-1::before {
+  content: var(--tw-content);
+  bottom: 0.25rem;
+}
+
+.before\:-bottom-1::before {
+  content: var(--tw-content);
+  bottom: -0.25rem;
+}
+
 .before\:h-0\.5::before {
   content: var(--tw-content);
   height: 0.125rem;
@@ -879,6 +902,11 @@ p {
 .before\:opacity-0::before {
   content: var(--tw-content);
   opacity: 0;
+}
+
+.before\:opacity-100::before {
+  content: var(--tw-content);
+  opacity: 1;
 }
 
 .before\:transition-all::before {
@@ -960,6 +988,16 @@ p {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.dark\:text-primaryColor:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(62 99 249 / var(--tw-text-opacity));
+}
+
+.dark\:text-red-500:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .dark\:text-slate-100:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
@@ -981,10 +1019,6 @@ p {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
   }
 
   .md\:gap-5 {
