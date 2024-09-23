@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohamed Abassia</title>
-    <link rel="stylesheet" href="assets/css/toggle.css" />
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,94 +19,112 @@
   >
     <main>
       <nav
-        class="py-4 dark:bg-slate-900 transition-colors-and-bg duration-300 shadow-md sticky top-0"
+        class="dark:bg-slate-900 transition-colors-and-bg duration-300 shadow-md fixed w-full top-0 z-10"
       >
-        <div class="container mx-auto px-2 flex items-center justify-between">
-          <a class="text-primaryColor" href="#">
+        <div
+          class="container mx-auto px-2 flex items-center justify-between relative"
+        >
+          <a class="text-primaryColor py-4" href="#">
             <h3 class="m-0">Mohamed Abassia</h3>
           </a>
-          <ul class="flex items-center space-x-5">
-            <li class="py-2">
-              <a
-                href="#"
-                class="capitalize font-semibold text-primaryColor relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bg-primaryColor before:transition-all before:opacity-0 before:bottom-0"
-                data-target="home"
-                >home</a
+          <div class="flex items-center space-x-3 py-4">
+            <ul
+              class="md:flex items-center md:space-x-3 lg:space-x-5 opacity-0 absolute -z-10 left-0 w-full top-full dark:bg-slate-900 p-5 text-center shadow-lg rounded-md transition-all invisible md:visible md:opacity-100 md:static md:bg-transparent md:z-10 md:shadow-none md:p-0 bg-slate-50"
+            >
+              <li class="py-2">
+                <a
+                  href="#home"
+                  class="capitalize font-semibold text-primaryColor relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bg-primaryColor before:transition-all before:opacity-0 before:bottom-0"
+                  data-target="home"
+                  >home</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#about"
+                  class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
+                  data-target="about"
+                  >about</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#education"
+                  class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
+                  data-target="education"
+                  >education</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#projects"
+                  class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
+                  data-target="projects"
+                  >projects</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#contact"
+                  class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
+                  data-target="contact"
+                  >contact</a
+                >
+              </li>
+            </ul>
+
+            <label
+              class="inline-flex items-center relative toggle cursor-pointer"
+            >
+              <input class="peer hidden" id="toggle" type="checkbox" />
+              <div
+                class="shadow-md relative w-[80px] h-[30px] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-[28px] after:h-[28px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[1px] after:left-[3px] active:after:w-[30px] peer-checked:after:left-[75px] peer-checked:after:translate-x-[-100%] duration-300 after:duration-300 after:shadow-md"
+              ></div>
+              <svg
+                height="0"
+                width="100"
+                viewBox="0 0 24 24"
+                class="fill-white peer-checked:opacity-60 absolute w-4 h-4 left-[10px]"
               >
-            </li>
-            <li class="py-2">
-              <a
-                href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
-                data-target="about"
-                >about</a
+                <path
+                  d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5ZM13,0h-2V5h2V0Zm0,19h-2v5h2v-5ZM5,11H0v2H5v-2Zm19,0h-5v2h5v-2Zm-2.81-6.78l-1.41-1.41-3.54,3.54,1.41,1.41,3.54-3.54ZM7.76,17.66l-1.41-1.41-3.54,3.54,1.41,1.41,3.54-3.54Zm0-11.31l-3.54-3.54-1.41,1.41,3.54,3.54,1.41-1.41Zm13.44,13.44l-3.54-3.54-1.41,1.41,3.54,3.54,1.41-1.41Z"
+                ></path>
+              </svg>
+              <svg
+                height="512"
+                width="512"
+                viewBox="0 0 24 24"
+                class="fill-black opacity-60 peer-checked:opacity-70 peer-checked:fill-white absolute w-4 h-4 right-[10px]"
               >
-            </li>
-            <li class="py-2">
-              <a
-                href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
-                data-target="education"
-                >education</a
-              >
-            </li>
-            <li class="py-2">
-              <a
-                href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
-                data-target="projects"
-                >projects</a
-              >
-            </li>
-            <li class="py-2">
-              <a
-                href="#"
-                class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
-                data-target="contact"
-                >contact</a
-              >
-            </li>
-            <li>
-              <label class="theme-switch">
-                <input type="checkbox" class="theme-switch__checkbox" />
-                <div class="theme-switch__container">
-                  <div class="theme-switch__clouds"></div>
-                  <div class="theme-switch__stars-container">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 144 55"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="theme-switch__circle-container">
-                    <div class="theme-switch__sun-moon-container">
-                      <div class="theme-switch__moon">
-                        <div class="theme-switch__spot"></div>
-                        <div class="theme-switch__spot"></div>
-                        <div class="theme-switch__spot"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label>
-            </li>
-          </ul>
+                <path
+                  d="M12.009,24A12.067,12.067,0,0,1,.075,10.725,12.121,12.121,0,0,1,10.1.152a13,13,0,0,1,5.03.206,2.5,2.5,0,0,1,1.8,1.8,2.47,2.47,0,0,1-.7,2.425c-4.559,4.168-4.165,10.645.807,14.412h0a2.5,2.5,0,0,1-.7,4.319A13.875,13.875,0,0,1,12.009,24Zm.074-22a10.776,10.776,0,0,0-1.675.127,10.1,10.1,0,0,0-8.344,8.8A9.928,9.928,0,0,0,4.581,18.7a10.473,10.473,0,0,0,11.093,2.734.5.5,0,0,0,.138-.856h0C9.883,16.1,9.417,8.087,14.865,3.124a.459.459,0,0,0,.127-.465.491.491,0,0,0-.356-.362A10.68,10.68,0,0,0,12.083,2ZM20.5,12a1,1,0,0,1-.97-.757l-.358-1.43L17.74,9.428a1,1,0,0,1,.035-1.94l1.4-.325.351-1.406a1,1,0,0,1,1.94,0l.355,1.418,1.418.355a1,1,0,0,1,0,1.94l-1.418.355-.355,1.418A1,1,0,0,1,20.5,12ZM16,14a1,1,0,0,0,2,0A1,1,0,0,0,16,14Zm6,4a1,1,0,0,0,2,0A1,1,0,0,0,22,18Z"
+                ></path>
+              </svg>
+            </label>
+            <label
+              class="flex md:hidden flex-col gap-2 w-8 menu cursor-pointer"
+            >
+              <input class="peer hidden" type="checkbox" />
+              <div
+                class="rounded-2xl h-[3px] w-1/2 bg-black dark:bg-slate-100 duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]"
+              ></div>
+              <div
+                class="rounded-2xl h-[3px] w-full bg-black dark:bg-slate-100 duration-500 peer-checked:-rotate-45"
+              ></div>
+              <div
+                class="rounded-2xl h-[3px] w-1/2 bg-black dark:bg-slate-100 duration-500 place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"
+              ></div>
+            </label>
+          </div>
         </div>
       </nav>
       <section
-        class="home h-screen flex flex-col dark:text-slate-100 transition-colors-and-bg duration-300"
+        class="home min-h-screen flex flex-col dark:text-slate-100 transition-colors-and-bg duration-300"
         id="home"
       >
-        <div class="flex-1 md:flex mt-10">
+        <div class="flex-1 md:flex mt-32 md:mt-0">
           <div
-            class="container mx-auto px-2 flex justify-between items-center md:gap-5 lg:gap-10 flex-col text-center md:flex-row md:text-start"
+            class="container mx-auto px-4 flex justify-between items-center md:gap-5 lg:gap-10 flex-col text-center md:flex-row md:text-start"
           >
             <div class="lg:flex-1">
               <h3>Hello, I'm</h3>
@@ -136,6 +153,7 @@
           </div>
         </div>
       </section>
+      <section class="about" id="about">Mohamed</section>
     </main>
     <script src="assets/js/app.js" type="module"></script>
     <script src="assets/js/type-writer.js" type="module"></script>

@@ -1,6 +1,6 @@
 import { typeWriter } from "./type-writer.js";
 
-let themeSwitch = document.querySelector(".theme-switch__container");
+let themeSwitch = document.querySelector(".toggle").querySelector("div");
 
 if (!localStorage.getItem("mo3bassia-theme")) {
   localStorage.setItem("mo3bassia-theme", "light");
@@ -9,11 +9,12 @@ if (!localStorage.getItem("mo3bassia-theme")) {
     document.documentElement.classList.remove("dark");
   } else {
     document.documentElement.classList.add("dark");
-    document.querySelector(".theme-switch__checkbox").checked = "true";
+    document.querySelector(".toggle").querySelector(".peer").checked = "true";
   }
 }
 
 themeSwitch.addEventListener("click", function () {
+  console.log("HEllo");
   document.documentElement.classList.toggle("dark");
   if (document.documentElement.classList.contains("dark")) {
     localStorage.setItem("mo3bassia-theme", "dark");
@@ -58,4 +59,12 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+let menuBtn = document.querySelector(".menu input");
+menuBtn.addEventListener("click", function () {
+  let ulMenu = document.querySelector("nav ul");
+  ulMenu.classList.toggle("opacity-100");
+  ulMenu.classList.toggle("invisible");
+  ulMenu.classList.toggle("z-10");
 });
