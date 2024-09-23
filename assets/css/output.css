@@ -760,6 +760,10 @@ p {
   margin-left: 0.5rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .block {
   display: block;
 }
@@ -879,6 +883,14 @@ p {
 
 .grow {
   flex-grow: 1;
+}
+
+.basis-5\/12 {
+  flex-basis: 41.666667%;
+}
+
+.basis-7\/12 {
+  flex-basis: 58.333333%;
 }
 
 .origin-left {
@@ -1570,6 +1582,12 @@ p {
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:visible {
     visibility: visible;
@@ -1597,6 +1615,22 @@ p {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:basis-4\/12 {
+    flex-basis: 33.333333%;
+  }
+
+  .md\:basis-8\/12 {
+    flex-basis: 66.666667%;
+  }
+
+  .md\:basis-5\/12 {
+    flex-basis: 41.666667%;
+  }
+
+  .md\:basis-7\/12 {
+    flex-basis: 58.333333%;
   }
 
   .md\:flex-row {
@@ -1630,6 +1664,11 @@ p {
     line-height: 1;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:opacity-100 {
     opacity: 1;
   }
@@ -1646,6 +1685,22 @@ p {
     flex: 1 1 0%;
   }
 
+  .lg\:basis-5\/12 {
+    flex-basis: 41.666667%;
+  }
+
+  .lg\:basis-7\/12 {
+    flex-basis: 58.333333%;
+  }
+
+  .lg\:basis-4\/12 {
+    flex-basis: 33.333333%;
+  }
+
+  .lg\:basis-8\/12 {
+    flex-basis: 66.666667%;
+  }
+
   .lg\:gap-10 {
     gap: 2.5rem;
   }
@@ -1659,5 +1714,15 @@ p {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:basis-5\/12 {
+    flex-basis: 41.666667%;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 }
