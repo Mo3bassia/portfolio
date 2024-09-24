@@ -56,7 +56,11 @@ const observer = new IntersectionObserver((entries) => {
       allLinks.forEach((link) => {
         link.classList.remove("dark:text-primaryColor");
         link.classList.add("dark:text-slate-200");
-        link.classList.remove("before:opacity-100", "before:-bottom-1.5");
+        link.classList.remove(
+          "before:opacity-100",
+          "before:-bottom-1.5",
+          "text-primaryColor"
+        );
       });
       let currentEl = document.querySelector(
         `[data-target='${entry.target.id}']`
