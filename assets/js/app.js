@@ -44,9 +44,9 @@ themeSwitch.addEventListener("click", function () {
 const sections = document.querySelectorAll("section");
 
 const options = {
-  root: null, // viewport
-  rootMargin: "2px",
-  threshold: 0.5,
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.1,
 };
 
 const observer = new IntersectionObserver((entries) => {
