@@ -63,14 +63,14 @@
                   >projects</a
                 >
               </li>
-              <li class="py-2">
+              <!-- <li class="py-2">
                 <a
                   href="#contact"
                   class="capitalize font-semibold relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-primaryColor before:opacity-0 hover:before:opacity-100 before:transition-all hover:before:-bottom-1.5 dark:text-slate-200"
                   data-target="contact"
                   >contact</a
                 >
-              </li>
+              </li> -->
             </ul>
 
             <label
@@ -328,11 +328,11 @@
         </div>
       </section>
       <section class="projects pt-16" id="projects">
-        <div class="container mx-auto px-2">
+        <div class="mx-auto px-2">
           <h2 class="title text-center">
             Latest <span class="text-primaryColor">Projects</span>
           </h2>
-          <div class="projects mt-10">
+          <div class="projects mt-10 container mx-auto px-2">
             <div
               class="flex gap-5 lg:gap-10 flex-col lg:flex-row items-center mt-20"
             >
@@ -341,8 +341,9 @@
               >
                 <img
                   src="assets/images/projects/chat app illustration.png"
-                  class="rounded-lg shadow-lg"
+                  class="rounded-lg shadow-lg group-hover:translate-y-[calc(100%-372px)]"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -352,7 +353,7 @@
                 <p class="text-gray-500">
                   Solution for Frontend Mentor challenge
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -406,8 +407,9 @@
               >
                 <img
                   src="assets/images/projects/mo3bassia dashboard.png"
-                  class="rounded-lg shadow-lg transition-all duration-3000"
+                  class="rounded-lg shadow-lg transition-all duration-10000 group-hover:-translate-y-[calc(100%-372px)] ease-linear"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -418,7 +420,7 @@
                   A simple responsive dashboard made with HTML and CSS with
                   custom components
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -462,8 +464,9 @@
               >
                 <img
                   src="assets/images/projects/mo3bassia world.png"
-                  class="rounded-lg shadow-lg transition-all duration-3000"
+                  class="rounded-lg shadow-lg transition-all duration-15000 group-hover:-translate-y-[calc(100%-372px)] ease-linear"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -474,7 +477,7 @@
                   Perfect responsive design has been created by HTML, CSS and
                   Pure javascript.
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -518,8 +521,9 @@
               >
                 <img
                   src="assets/images/projects/special design.png"
-                  class="rounded-lg shadow-lg transition-all duration-3000"
+                  class="rounded-lg shadow-lg transition-all duration-10000 group-hover:-translate-y-[calc(100%-372px)] ease-linear"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -560,7 +564,7 @@
                     </li>
                   </ul>
                 </div>
-                <ul class="flex items-center gap-3 mt-5">
+                <ul class="flex items-center gap-3 mt-5 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -610,8 +614,9 @@
               >
                 <img
                   src="assets/images/projects/rest countries api.png"
-                  class="rounded-lg shadow-lg transition-all duration-3000"
+                  class="rounded-lg shadow-lg transition-all duration-3000 group-hover:-translate-y-[calc(100%-372px)] ease-linear"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -630,7 +635,7 @@
                   helping you discover countries and explore information in a
                   flexible and enjoyable way
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -688,6 +693,7 @@
                   src="assets/images/projects/prayer times.png"
                   class="rounded-lg shadow-lg transition-all duration-3000"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -698,7 +704,7 @@
                   Prayer times app can give you prayers after having permission
                   on your location or you can type your country and your city
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -754,8 +760,9 @@
               >
                 <img
                   src="assets/images/projects/star pages.png"
-                  class="rounded-lg shadow-lg"
+                  class="rounded-lg shadow-lg duration-10000 group-hover:-translate-y-[calc(100%-372px)] ease-linear transition-all"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -767,7 +774,7 @@
                   beautiful websites. i have developed these website with HTML,
                   CSS, Javascript and AOS for animation
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -826,8 +833,9 @@
               >
                 <img
                   src="assets/images/projects/training studio.png"
-                  class="rounded-lg shadow-lg"
+                  class="rounded-lg shadow-lg duration-10000 group-hover:-translate-y-[calc(100%-372px)] ease-linear transition-all"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -838,7 +846,7 @@
                   A simple design on the internet that i have turned it to HTML,
                   CSS and Bootstrap.
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -900,6 +908,7 @@
                   src="assets/images/projects/ping-coming-soon.png"
                   class="rounded-lg shadow-lg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -909,7 +918,7 @@
                 <p class="text-gray-500">
                   Solution for Frontend Mentor challenge
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -969,8 +978,9 @@
               >
                 <img
                   src="assets/images/projects/tailwind css.png"
-                  class="rounded-lg shadow-lg"
+                  class="rounded-lg shadow-lg duration-5000 group-hover:-translate-y-[calc(100%-372px)] ease-linear transition-all"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -980,7 +990,7 @@
                 <p class="text-gray-500">
                   Simple design has developed by HTML and Tailwind CSS
                 </p>
-                <ul class="flex items-center gap-3">
+                <ul class="flex items-center gap-3 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -1030,6 +1040,7 @@
                   src="assets/images/projects/whatsapp gpt.png"
                   class="rounded-lg shadow-lg transition-all duration-3000"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -1041,7 +1052,7 @@
                   it by API, design is similar also to WhatsApp app. Website has
                   been developed by HTML, CSS and Javascript with API
                 </p>
-                <ul class="flex items-center gap-3 mt-5">
+                <ul class="flex items-center gap-3 mt-5 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -1099,6 +1110,7 @@
                   src="assets/images/projects/to do list.png"
                   class="rounded-lg shadow-lg transition-all duration-3000"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -1120,7 +1132,7 @@
                     <li>Different colors and save in locale storage</li>
                   </ul>
                 </div>
-                <ul class="flex items-center gap-3 mt-5">
+                <ul class="flex items-center gap-3 mt-5 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -1180,8 +1192,9 @@
               >
                 <img
                   src="assets/images/projects/clipboard landing page.png"
-                  class="rounded-lg shadow-lg transition-all duration-3000"
+                  class="rounded-lg shadow-lg transition-all duration-10000 group-hover:-translate-y-[calc(100%-372px)] ease-linear"
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div class="description w-full lg:basis-1/2">
@@ -1191,7 +1204,7 @@
                 <p class="text-gray-500">
                   Solution for Frontend Mentor challenge
                 </p>
-                <ul class="flex items-center gap-3 mt-5">
+                <ul class="flex items-center gap-3 mt-5 flex-wrap">
                   <li
                     class="flex items-center px-3 py-2 bg-slate-100 text-slate-800 rounded-md gap-2 dark:bg-slate-900 dark:text-slate-100 shadow-md"
                   >
@@ -1240,7 +1253,6 @@
           </div>
         </div>
       </section>
-      <section class="contact" id="contact">Mohamed</section>
     </main>
     <script src="assets/js/app.js" type="module"></script>
     <script src="assets/js/type-writer.js" type="module"></script>

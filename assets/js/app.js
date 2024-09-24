@@ -84,3 +84,47 @@ menuBtn.addEventListener("click", function () {
   ulMenu.classList.toggle("invisible");
   ulMenu.classList.toggle("z-10");
 });
+
+window.onload = function () {
+  let projects = document
+    .querySelector(".projects")
+    .querySelectorAll(".projects.container > div");
+
+  projects.forEach((project) => {
+    project.querySelector("a").target = "_blank";
+    project.querySelector("a").href = project.querySelector(
+      "[data-tooltip='Live Demo']"
+    ).href;
+
+    project.querySelector("img").classList.add("cursor-pointer");
+
+    // console.log(project.querySelector("img").parentElement);
+    // console.log(project.querySelector("img").parentElement.offsetTop - 500);
+    // console.log(project.querySelector("img").scrollHeight);
+  });
+};
+
+// window.onscroll = function (e) {
+//   let projects = document
+//     .querySelector(".projects")
+//     .querySelectorAll(".projects.container > div");
+
+//   projects.forEach((project) => {
+//     project.querySelector("a").target = "_blank";
+//     project.querySelector("a").href = project.querySelector(
+//       "[data-tooltip='Live Demo']"
+//     ).href;
+
+//     if (
+//       window.scrollY >=
+//       project.querySelector("img").parentElement.offsetTop -
+//         document.documentElement.clientHeight
+//     ) {
+//       let number = (project.querySelector("img").clientHeight - 372) / 100;
+//       console.log((project.querySelector("img").clientHeight - 372) / 100);
+//       project
+//         .querySelector("img")
+//         .classList.add(`group-hover:-translate-y-[${number}%]`);
+//     }
+//   });
+// };
