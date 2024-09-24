@@ -45,7 +45,7 @@ const sections = document.querySelectorAll("section");
 
 const options = {
   root: null, // viewport
-  rootMargin: "0px",
+  rootMargin: "2px",
   threshold: 0.5,
 };
 

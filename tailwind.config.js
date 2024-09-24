@@ -17,6 +17,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 2s linear infinite",
       },
+      transitionDuration: {
+        3000: "3000ms",
+      },
     },
   },
   plugins: [],
