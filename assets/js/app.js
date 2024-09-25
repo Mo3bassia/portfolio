@@ -104,27 +104,34 @@ window.onload = function () {
   });
 };
 
-// window.onscroll = function (e) {
-//   let projects = document
-//     .querySelector(".projects")
-//     .querySelectorAll(".projects.container > div");
-
-//   projects.forEach((project) => {
-//     project.querySelector("a").target = "_blank";
-//     project.querySelector("a").href = project.querySelector(
-//       "[data-tooltip='Live Demo']"
-//     ).href;
-
-//     if (
-//       window.scrollY >=
-//       project.querySelector("img").parentElement.offsetTop -
-//         document.documentElement.clientHeight
-//     ) {
-//       let number = (project.querySelector("img").clientHeight - 372) / 100;
-//       console.log((project.querySelector("img").clientHeight - 372) / 100);
-//       project
-//         .querySelector("img")
-//         .classList.add(`group-hover:-translate-y-[${number}%]`);
-//     }
-//   });
-// };
+ScrollReveal().reveal("nav", {
+  origin: "top",
+  distance: "5px",
+  duration: 600,
+  delay: 100,
+  easing: "ease-in-out",
+});
+ScrollReveal().reveal(".animation-right", {
+  origin: "right",
+  distance: "20px",
+  viewFactor: 0.2,
+  duration: 600,
+  delay: 100,
+  easing: "ease-in-out",
+});
+ScrollReveal().reveal(".animation-left", {
+  origin: "left",
+  distance: "20px",
+  viewFactor: 0.2,
+  duration: 600,
+  delay: 100,
+  easing: "ease-in-out",
+});
+ScrollReveal().reveal(".animation-bottom", {
+  origin: "bottom",
+  distance: "20px",
+  viewFactor: 0.2,
+  duration: 600,
+  delay: 100,
+  easing: "ease-in-out",
+});
