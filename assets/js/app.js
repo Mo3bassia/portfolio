@@ -107,8 +107,8 @@ window.onload = function () {
 ScrollReveal().reveal("nav", {
   origin: "top",
   distance: "5px",
-  duration: 600,
-  delay: 100,
+  duration: 500,
+  delay: 0,
   easing: "ease-in-out",
 });
 ScrollReveal().reveal(".animation-right", {
